@@ -1,0 +1,3 @@
+*.pyc
+ckanext_toscana_reports.egg-info/*
+
