@@ -177,7 +177,7 @@ def datasets_without_resources(organization, include_sub_organizations=False):
     if organization:
         query = lib.filter_by_organizations(query, organization,
                                         include_sub_organizations)
-    for pkg in add_progress_bar(query.all()):
+    for pkg in query.all():
         if len(pkg.resources) != 0 or \
                 pkg.extras.get('unpublished', '').lower() == 'true':
             continue
