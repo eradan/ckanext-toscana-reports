@@ -53,6 +53,7 @@ It's based upon the ckanext-report infrustructure so it depends on previous inst
 4. In order to keep reports up-to-date configure cron as follow:
 
     `30 0 * * * /usr/lib/ckan/default/bin/paster --plugin=ckanext-qa qa update --config=/etc/ckan/default/production.ini`
+
     `40 0 * * * /usr/lib/ckan/default/bin/paster --plugin=ckanext-report report generate --config=/etc/ckan/default/production.ini`
 
   
